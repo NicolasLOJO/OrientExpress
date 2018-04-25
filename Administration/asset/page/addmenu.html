@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+    src="http://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script type="text/javascript" src="../js/addmenu.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/addmenu.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <title>Administration</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <div id="leftside-navigation" class="nano">
+            <ul class="nano-content">
+            <li>
+                <a href="../../index.html"><i class="fa fa-dashboard"></i><span id="bonjour"></span></a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>Cartes</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                <ul>
+        
+                <li><a href="VoirCartes.html" class="see_all">Voir les cartes</a>
+                </li>
+                <li><a href="seeOneCard.html" class="see_one">Voir une carte</a>
+                </li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Menus</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                <ul>
+                <li><a href="seeAllMenu.html" class="see_all_meal">Voir tout les menus</a>
+                </li>
+                <li><a class="see_all_cardmeal">Ajouter un menu</a>
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </aside>
+    <div id="main" class="container-fluid">
+        <h5>Ajouter un menu :</h5>
+        <span class='row myinputspan'>
+            <p>Selectionner la carte dans laquel ira le menu</p>
+            <select name="selector" class="myinput" id="selector">
+                
+            </select>
+        </span>
+        <span class="row myinputspan">
+            <p>Nom : </p>
+            <input type="text" id="nommenu" class="myinput" placeholder="nom">
+        </span>
+        <span class="row myinputspan">
+            <p>Entrée : </p>
+            <input type="text" class="myinput" id="entree" placeholder="entrée">
+            <input type="number" class="myinput" id="prixentree" placeholder="prix entrée">
+        </span>
+        <span class="row myinputspan">
+            <p>Plat : </p>
+            <input type="text" class="myinput" id="plat" placeholder="plat">
+            <input type="number" class="myinput" id="prixplat" placeholder="prix plat">
+        </span>
+        <span class="row myinputspan">
+            <p>Dessert : </p>
+            <input type="text" class="myinput" id="dessert" placeholder="dessert">
+            <input type="number" class="myinput" id="prixdessert" placeholder="prix dessert">
+        </span>
+        <input type="button" class="myButton" id="validmenu" value="Valider">
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    background-image: url('../image/2.jpg');
+}
+
+#main {
+    background-color: white;
+    height: 100%;
+    padding-left: 240px;
+    padding-right: 0px;
+    color: black;
+}
+
+.alignp {
+    height: 20px;
+    margin-top: 80px;
+}
+
+#listecarte {
+    border: 1px solid black;
+    height: 80%;
+    width: 100%;
+}
+
+.myview {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    height: 80%;
+}
+
+.myinputspan {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.myButton {
+    height: 30px;
+    margin-left: 5px;
+}
+
+.maincarte {
+    overflow: scroll;
+    padding: 5px;
+}
+
+.mypview {
+    font-weight: bold;
+}
+
+#prixdessert {
+    border-bottom: 1px solid black;
+}
+
+#listecarte {
+    border: 1px solid black;
+    height: 80%;
+    width: 100%;
+}

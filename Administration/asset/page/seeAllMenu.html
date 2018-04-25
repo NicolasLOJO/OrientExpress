@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+    src="http://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script type="text/javascript" src="../js/seeAllMenu.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/seeAllMenu.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <title>Administration</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <div id="leftside-navigation" class="nano">
+            <ul class="nano-content">
+            <li>
+                <a href="../../index.html"><i class="fa fa-dashboard"></i><span id="bonjour"></span></a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>Cartes</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                <ul>
+        
+                <li><a href="VoirCartes.html" class="see_all">Voir les cartes</a>
+                </li>
+                <li><a href="seeOneCard.html" class="see_one">Voir une carte</a>
+                </li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Menus</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                <ul>
+                <li><a class="see_all_meal">Voir tout les menus</a>
+                </li>
+                <li><a href="addmenu.html" class="see_all_cardmeal">Ajouter un menu</a>
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </aside>
+    <div id="main" class="container-fluid">
+        <span class="row myinputspan">
+            <p>Supprimer tout les menus de la carte : </p>
+            <select class="myButton" name="Selecteur" id="delAllMenu">
+
+            </select>
+            <input type="button" id="viewdel" class="myButton" value="Supprimer">
+        </span>
+        <span class="row myinputspan">
+            <p>Supprimer un menu : </p>
+            <select class="myButton" name="Selecteur" id="seeAllMenu">
+
+            </select>
+            <input type="button" id="viewid" class="myButton" value="Supprimer">
+        </span>
+        <div class="row myview">
+            <p class="alignp">Mes Menus :</p>
+            <div class="maincarte" id="listecarte">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    background-image: url('../image/2.jpg');
+}
+
+#main {
+    background-color: white;
+    height: 100%;
+    padding-left: 240px;
+    padding-right: 0px;
+    color: black;
+}
+
+.myinputspan {
+    width: 100%;
+    padding: 20px;
+}
+
+.myButton {
+    height: 30px;
+    margin-left: 5px;
+}
+
+.myview {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.myinputspan {
+    width: 100%;
+    padding: 20px;
+}
+
+.myInput {
+    margin-left: 20px;
+    height: 30px;
+}
